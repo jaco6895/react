@@ -1,8 +1,11 @@
 @function rem($size){
-  @return (#{$size} / #{$GlobalFontSize}) * 1rem;
+  @return $size / $GlobalFontSize * 1rem;
 }
 
 $GlobalFontSize:14px;
+
 $bgColor:#efefef;
 $fontColor:#232323;
-
+$pointColor:#4CBFD9;
+$white:#fff;
+$black:#000;
