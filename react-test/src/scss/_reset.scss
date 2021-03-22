@@ -1,0 +1,11 @@
+body,html{
+  font-size: $GlobalFontSize;
+  color: $fontColor;
+  background-color: $bgColor;
+}
+*{
+  list-style:none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
