@@ -1,10 +1,15 @@
 @function rem($size){
   @return $size / $GlobalFontSize * 1rem;
 }
+@mixin boxDarkShadow($x:0, $y:0,$feather:rem(10px),$width:3px,$rgbC:rgba(0,0,0,0.25)){
+  box-shadow: $x $y $feather $width $rgbC;
+
+}
 
 $GlobalFontSize:14px;
 
 $bgColor:#efefef;
+$subBgColor:#444444;
 $fontColor:#232323;
 $pointColor:#4CBFD9;
 $white:#fff;

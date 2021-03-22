@@ -5,5 +5,36 @@ body{
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: #efefef;
+}
+
+input{
+  outline:none;
+  border: none;
+  box-shadow: none;
+  padding: rem(10px);
+  font-size: rem(15px);
+  line-height: 1.5;
+  &::placeholder{
+    color: rgba(255,255,255,0.65);
+    flex: 1;
+  }
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  background-color: $pointColor;
+  color: $white;
+  padding: rem(10px) rem(15px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.1s background ease-in-out;
+  &:hover{
+    background-color: #fff;
+    color: $fontColor;
+  }
 }
