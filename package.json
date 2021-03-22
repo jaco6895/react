@@ -1,0 +1,9 @@
+{
+  "name": "reactTest",
+  "version": "1.0.0",
+  "description": "react",
+  "main": "index.js",
+  "repository": "https://github.com/jaco6895/react.git",
+  "author": "jaco6895@gmail.com <jisu94@antock.com>",
+  "license": "MIT"
+}
