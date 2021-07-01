@@ -1,0 +1,12 @@
+{
+  "name": "redux-tutorial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "testProject",
+  "scripts": {
+    "start": "webpack-dev-server --mode development"
+  }
+}
+
+

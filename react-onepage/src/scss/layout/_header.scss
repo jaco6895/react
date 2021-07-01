@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.header{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  padding: 0 15px;
+  box-sizing: border-box;
+  @include fontColor($g-color);
+  align-content: center;
+  h1{
+    font-size: rem(23px);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 15px 0 0;
+  }
+}

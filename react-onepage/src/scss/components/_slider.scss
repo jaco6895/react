@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.slider{
+  width: 100%;
+  min-height: 400px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  .slider-item{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
