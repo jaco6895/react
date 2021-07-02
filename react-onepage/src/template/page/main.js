@@ -3,11 +3,14 @@ import Slider from '../components/slider'
 
 const videoSrc = [
     {
-        src : "/coffee_video.mp4",
+        src : "/video/coffee_video.mp4",
 
     },
     {
-        src : ""
+        src : "/video/counter.mp4"
+    },
+    {
+        src : "/video/summer_strawberry.mp4"
     }
 ]
 

@@ -13,7 +13,9 @@ const Header = () => {
 const Navbar = () =>{
     return (
         <div className="navbar">
-            <h1 className="logo"><GiStarFormation /></h1>
+            <h1 className="logo">
+                <img src="../../assets/images/starbucks.svg" />
+            </h1>
             <ul>
                 <li className="now">COFFEE</li>
                 <li>MENU</li>
