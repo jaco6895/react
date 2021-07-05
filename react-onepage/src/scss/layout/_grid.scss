@@ -22,7 +22,6 @@ body{
 }
 
 .grid-wrapper{
-  padding-top: 40px;
   box-sizing: border-box;
 }
 
@@ -35,6 +34,10 @@ body{
       width: 100%;
       min-height:400px;
       height: 100vh;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      align-items: flex-start;
       @for $i from 1 to 6 {
         &:nth-child(#{$i}){
           background-color: rgb(140 - (10 * $i),180 - (10 * $i),255 - (10 * $i));
@@ -43,7 +46,12 @@ body{
   }
 }
 
+.wrapper,.video-wrapper{
+  width: 100%;
+  height: 100%;
+  position: relative;
 
+}
 
 //ul{
 //  @for $i from 0 to 9 {

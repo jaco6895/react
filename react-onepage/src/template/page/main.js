@@ -4,7 +4,6 @@ import Slider from '../components/slider'
 const videoSrc = [
     {
         src : "/video/coffee_video.mp4",
-
     },
     {
         src : "/video/counter.mp4"
@@ -20,8 +19,10 @@ const Main = () =>{
         <div className="main">
             <div className="scroll-page-wrapper">
                 <div className="scroll-page">
-                    <video controls={false} autoPlay loop muted src={videoSrc[0].src} type="video/mp4">
-                    </video>
+                    <div className="video-wrapper">
+                        <Blind></Blind>
+                        <video controls={false} autoPlay loop muted src={videoSrc[random(0,1)].src} type="video/mp4"></video>
+                    </div>
                 </div>
                 <div className="scroll-page">
                     <Slider></Slider>
@@ -34,4 +35,14 @@ const Main = () =>{
     );
 }
 
+
+const Blind = () => {
+    return(
+        <div className="blind"></div>
+    );
+}
+
+function random(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 export default Main;

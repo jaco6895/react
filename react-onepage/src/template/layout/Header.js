@@ -14,7 +14,7 @@ const Navbar = () =>{
     return (
         <div className="navbar">
             <h1 className="logo">
-                <img src="../../assets/images/starbucks.svg" />
+                <img src={require("../../assets/images/starbucks.svg").default}  alt="STARBUGS"/>
             </h1>
             <ul>
                 <li className="now">COFFEE</li>
