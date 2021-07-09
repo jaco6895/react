@@ -36,6 +36,17 @@ const Main = () =>{
 }
 
 
+const Menu1 = () =>{
+    return (
+        <div className="menu1">
+            <div className="bg-color"></div>
+        </div>
+    );
+}
+
+
+
+
 const Blind = () => {
     return(
         <div className="blind"></div>
@@ -45,4 +56,6 @@ const Blind = () => {
 function random(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+
 export default Main;
