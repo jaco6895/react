@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  position: relative;
   .video-wrapper{
     display: flex;
     justify-content: center;
@@ -26,11 +27,27 @@
 
 
 .blind{
-  width: 100%;
+  width: 50vw;
   height: 100%;
-  background-color: rgba(0,0,0,0.25);
+  min-width: 500px;
+  background-color: rgba(30,57,50,0.8);
   z-index: 1;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: right;
+  align-content: space-between;
+  img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width:90%;
+    //min-width: 500px;
+  }
+  .menu-wrapper{
+    position: absolute;
+    bottom:0;
+    left: 0;
+  }
 }

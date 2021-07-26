@@ -52,6 +52,11 @@ body{
   position: relative;
 
 }
+.menu-wrapper{
+    display: flex;
+    flex-direction: column;
+
+}
 
 //ul{
 //  @for $i from 0 to 9 {

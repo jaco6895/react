@@ -1,35 +1,21 @@
 import React,{useState , useCallback, Component} from 'react'
-import Slider from '../components/slider'
+import '../../scss/page/_main.scss';
+import MenuInfo from '../components/menu-info';
 
 const videoSrc = [
-    {
-        src : "/video/coffee_video.mp4",
-    },
-    {
-        src : "/video/counter.mp4"
-    },
-    {
-        src : "/video/summer_strawberry.mp4"
-    }
+    { id : 1, src : "/video/coffee_video.mp4"},
+    { id : 2, src : "/video/counter.mp4"},
+    { id : 3, src : "/video/summer_strawberry.mp4"}
 ]
 
-
-const Main = () =>{
+const Main = ({menu}) =>{
     return (
-        <div className="main">
-            <div className="scroll-page-wrapper">
-                <div className="scroll-page">
-                    <div className="video-wrapper">
-                        <Blind></Blind>
-                        <video controls={false} autoPlay loop muted src={videoSrc[random(0,1)].src} type="video/mp4"></video>
-                    </div>
+        <div className="scroll-page">
+            <div className="main">
+                <div className="video-wrapper">
+                    <video controls={false} autoPlay loop muted src={videoSrc[random(0,1)].src} type="video/mp4"></video>
                 </div>
-                <div className="scroll-page">
-                    <Slider></Slider>
-                </div>
-                <div className="scroll-page"></div>
-                <div className="scroll-page"></div>
-                <div className="scroll-page"></div>
+                <Blind menu={menu}></Blind>
             </div>
         </div>
     );
@@ -47,9 +33,12 @@ const Menu1 = () =>{
 
 
 
-const Blind = () => {
+const Blind = ({menu}) => {
     return(
-        <div className="blind"></div>
+        <div className="blind">
+            <img src={menu.imgUrl} alt={menu.title}/>
+            <MenuInfo title={menu.title} engTitle={menu.engTitle} contents={menu.contents}/>
+        </div>
     );
 }
 

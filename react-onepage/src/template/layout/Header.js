@@ -1,5 +1,4 @@
 import React from 'react';
-import { GiStarFormation } from 'react-icons/gi';
 import { IoLogIn } from 'react-icons/io5';
 const Header = () => {
     return (
@@ -14,7 +13,7 @@ const Navbar = () =>{
     return (
         <div className="navbar">
             <h1 className="logo">
-                <img src={require("../../assets/images/starbucks.svg").default}  alt="STARBUGS"/>
+                <img src={"/images/starbucks.svg"} alt="STARBUGS"/>
             </h1>
             <ul>
                 <li className="now">COFFEE</li>
