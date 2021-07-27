@@ -10,14 +10,12 @@ const videoSrc = [
 
 const Main = ({menu}) =>{
     return (
-        <div className="scroll-page">
             <div className="main">
                 <div className="video-wrapper">
                     <video controls={false} autoPlay loop muted src={videoSrc[random(0,1)].src} type="video/mp4"></video>
                 </div>
-                <Blind menu={menu}></Blind>
+                <Blind main={menu[0]}></Blind>
             </div>
-        </div>
     );
 }
 
@@ -33,11 +31,11 @@ const Menu1 = () =>{
 
 
 
-const Blind = ({menu}) => {
+const Blind = ({main}) => {
     return(
         <div className="blind">
-            <img src={menu.imgUrl} alt={menu.title}/>
-            <MenuInfo title={menu.title} engTitle={menu.engTitle} contents={menu.contents}/>
+            <img src={main.imgUrl} alt={main.title}/>
+            <MenuInfo title={main.title} engTitle={main.engTitle} contents={main.contents}/>
         </div>
     );
 }

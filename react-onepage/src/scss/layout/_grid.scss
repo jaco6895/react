@@ -2,7 +2,7 @@
 
 body{
   font-size: $g-font-size;
-  font-family: 'AppleSDGothicNeoR00', '맑은 고딕', sans-serif;
+  font-family: 'AppleSDGothicNeo', '맑은 고딕', sans-serif;
   font-weight: normal;
 }
 
@@ -55,7 +55,24 @@ body{
 .menu-wrapper{
     display: flex;
     flex-direction: column;
-
+    h2{
+        font-size: rem(24px);
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: rem(7px);
+    }
+    h3{
+        font-size: rem(20px);
+        font-weight: 100;
+        color: #fff;
+        margin-bottom: rem(15px);
+    }
+    p{
+        font-size: rem(18px);
+        font-weight: 400;
+        color: #fff;
+        line-height: 1.4;
+    }
 }
 
 //ul{
