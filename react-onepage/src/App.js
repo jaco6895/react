@@ -7,7 +7,7 @@ import Footer from "./template/layout/Footer";
 const App = () => {
 
     const [menuList,setMenuList] = useState([
-        {// 1. 이번시즌의 추천 - 메인메뉴 (가장 미는 메뉴를 처음에 넣어주세요.)
+        {
             id : 'main',
             title:"블루베리 치즈브라우니 & 카라멜 라떼",
             imgUrl:"/images/cafe_2.png",
